@@ -14,7 +14,7 @@ export default function AuthProvider({children}) {
         return signInWithPopup(auth, provider);
     }
     const logOut = () =>{
-        setLoad()
+        setLoad(true)
         return signOut(auth);
     }
     const createUser = (email, password) =>{
