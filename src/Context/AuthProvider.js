@@ -3,7 +3,7 @@ import { getAuth, signInWithPopup, onAuthStateChanged, signOut, updateProfile, c
 import app from '../firebase/firebase.init'
 
 export const AuthContext = createContext()
-const auth = getAuth(app)
+const auth = getAuth()
 
 export default function AuthProvider({children}) {
     const [user, setUser] = useState(null);
